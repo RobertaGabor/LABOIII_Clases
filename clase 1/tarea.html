@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea clase 1</title>
+    <style>
+        #recuadro{
+            padding: 10px;
+            margin: 10px;
+            display: -ms-grid;  /*NI DEA Q ES*/
+            position: absolute;
+            border: 1px solid black;
+            width: 300px}
+        #titulo{
+            background-color: white;
+            position: relative;
+            margin-left: 20px;
+                
+        }
+    </style>
+</head>
+<body>
+    <table id="recuadro">
+        <tbody>
+            <tr>
+                <td>Usuario:</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="Usuario" id="user">
+                </td>
+            </tr>
+            <tr>
+                <td>Contraseña:</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" name="Contraseña" id="psw">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="Recordar" id="remember">Recordar usar y contraseña
+                </td>          
+            </tr>
+            <tr>
+                <td>
+                    <button>Enviar</button>    <button>Limpiar</button>   
+                </td>         
+            </tr>
+        </tbody>
+    </table>
+    <table id="titulo">
+        <tbody>
+            <tr>
+                <td>Login:</td>
+            </tr>
+        </tbody>     
+    </table>
+</body>
+</html>

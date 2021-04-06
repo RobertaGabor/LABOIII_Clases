@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+
+    <script>
+        function mostrar(){
+            var usuario= document.getElementById("usr").value;
+            var password= document.getElementById("psw").value;
+            //password.value="";
+            alert(usuario+" "+password);//dificl de debuggear
+            
+            
+        }
+
+        function limpiar(){
+            document.getElementById("usr").value="";
+            document.getElementById("psw").value="";
+            document.getElementById("remember").checked=false;
+        }
+
+    </script>
+
+
+</head>
+<body>
+   
+        <fieldset id="campo1" class="formularios" style="width: 300px;">
+            <legend id="l1" style="color: blueviolet;">Login:</legend>           
+            Usuario<br/>
+            <input type="text" id="usr" name="txtUser"><br/>
+            Contraseña<br/>
+            <input type="password" id="psw" name="txtPsw"><br/>
+            <input type="checkbox" name="Recordar" id="remember">Recordar usar y contraseña<br/>
+            <input type="submit" name="send" value="Enviar" onclick="mostrar()"> 
+            <input type="reset" value="Borrar" onclick="limpiar()">
+            
+        </fieldset>
+        </form>
+
+
+</body>
+</html>
