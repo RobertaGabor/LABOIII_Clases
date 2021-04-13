@@ -1,0 +1,52 @@
+
+p{
+    color: chocolate;
+    font-size: 89px;
+
+}
+
+
+h1,h2{
+
+
+
+    color: blue;
+}
+/* 
+si lo dejo sin p solo .negrita es PARA CUALQUIERA CON ESA CLASE */
+p.negrita{
+
+font-weight: bold;
+
+}
+
+.colorVerde{
+    color: green;
+}
+/* AL ID LE CAMBIO  */
+#name{
+    background-color: greenyellow;
+}
+
+/* SE PISA SEGUN LOS PESOS, SI ME PARO ENCIMA DICE EL PESO */
+
+input{
+
+    color: rgb(34, 9, 145);
+    background-color: lightseagreen;
+}
+
+.boton{
+
+    background-color: rgb(201, 146, 240);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+
+}
+
+.boton:hover{
+
+    background-color: orange;
+}
