@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--HACER QUE SI TOCAS LA FILA SE PONGA LA INFO EN LOS CUADROS Y SI EDITAS Y GUARDAS SE MODIFIQUE-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilo.css">
+    <script type=text/javascript src="./code.js"></script>
+</head>
+<body>
+    <div class="contenedor"> <!--  el alto es del elemento y ancho toda la pantalla -->
+        <label for="txtNombre">Nombre</label><br> <!--el for si toco el label me marca el cuadro -->
+        <input type="text" name="" id="txtNombre"><br>
+        <label for="txtApellido">Apellido</label><br>
+        <input type="text" name="" id="txtApellido"><br>
+
+        <input type="button" id="btn" value="Guardar">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Accion</th>
+            </tr>            
+        </thead>
+        <tbody id="tcuerpo">
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>
+
