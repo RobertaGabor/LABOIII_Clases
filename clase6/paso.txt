@@ -1,0 +1,5 @@
+node in TAB abre puerto
+
+se abre http://localhost:3000/Personas
+
+cambio endopoint o puerto desde index.js
