@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        /*peticion a servidores*/
+        var peticionHttp= new XMLHttpRequest(); //PIDO SERVIDOR
+        
+        function ejecutarGET()//en chrome la llamo con ()
+        {
+            peticionHttp.onreadystatechange=function(){
+                
+                console.log("llegó la respuesta",peticionHttp.readyState,peticionHttp.status);
+                if(peticionHttp.readyState==4 && peticionHttp.status==200)//SIGNIFICA RESPUESTA SATISFACTORIA
+                {
+                    //console.log(peticionHttp.responseText);//devuelve en formato que esta ejemploi json
+                    //console.log(peticionHttp.responseText[0].id)//UNDEFINED ES STRING NO OBJETO
+                    //TRANSFORO A JSON AL ARRAY
+                    
+                    var listaPersonas= JSON.parse(peticionHttp.responseText);
+                    for(var i=0;i<listaPersonas.length;i++)
+                    {
+                        console.log(listaPersonas[i].nombre,listaPersonas[i].apellido);
+                    }
+                }
+                
+            }
+
+                
+            //respuesta formato string
+
+            //status 200 todo OK
+            //cuando conecta cuando resive cuando ejecuta y cuando esta lista AVISA 4 VECES
+            //DONDE VA A LLEGAR LA RESPUESTA CUANDO SERVIDOR RESUELVA
+            peticionHttp.open("GET","http://localhost:3000/Personas",true);//true NO FRENA asincrono no frena la ejecucion COMO HILOS
+            //peticionHttp.setRequestHeader("key","value");//indicarle que necesita la peticion SI LO REQUIERE GET USUALMENTE NO
+            peticionHttp.send();  
+            /*jason objetos PARES con key valor var obj={"key":"value","numero":1}
+            obj.key= 
+            obj.numero
+
+            [{}]
+            ARRAY->OBJETO*/  
+     
+        }
+
+        
+
+        function ejecutarPOST()
+        {
+            var stringPersona;
+            peticionHttp.onreadystatechange=function(){
+                if(peticionHttp.readyState==4&&peticionHttp.status==200)
+                {
+                    
+                    console.log(peticionHttp.responseText);
+                    alert(peticionHttp.responseText);
+                }
+                //si no envio nada no va a funcar
+                //aclara content type en cabecera
+                var personaJson={"nombre":"matias","apellido":"ramos","fecha":"1979/04/07","telefono":"4945345435"};
+                stringPersona=JSON.stringify(personaJson);//lo hago a string xq SIEMPRE VIAJA STRING POR APIS SEND
+
+
+                //peticionHttp.send("{'nombre':'Matias','apellido':'Ramos','telefono':'124343','fecha':'2020/04/12'}");//aca va el envio pero como el tipo ej json
+            
+            }
+                peticionHttp.open("POST","http://localhost:3000/nuevaPersona",true);
+                peticionHttp.setRequestHeader("Content-type","application/json");
+                peticionHttp.send(stringPersona);
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
