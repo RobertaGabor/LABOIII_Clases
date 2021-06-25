@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: teal;width: 50%;margin: auto;height: 200px;
+            animation-name: mostrar;
+            animation-duration: 3s;/*muestra la animacion de keyframe*/
+        }/*al final vuelve al original*/
+        @keyframes mostrar{ /*agarra algo y enm un lapso de tiempo hace algo, lo vamos a usar para mostrar div con cada refdresco de monitor*/
+            from{
+                width: 0px;
+                background-color: tomato;
+            }
+            to{
+                width:50%;
+                background-color: yellowgreen;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="cont" hidden> <!--si pongo hidden es div oculto no aparece-->
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam aperiam cumque et? Officiis, assumenda. Neque ex ipsum soluta accusantium laboriosam sunt non? Dolor non debitis sequi autem voluptatem, exercitationem soluta!
+    </div>
+</body>
+</html>

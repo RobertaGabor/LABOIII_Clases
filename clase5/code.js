@@ -2,7 +2,7 @@ window.addEventListener("load",function()
 {
     var btn=document.getElementById("btn");
     btn.addEventListener("click",agregarPersona);
-
+    
     
 });
 
@@ -53,7 +53,7 @@ function agregarPersona()
          ancla.setAttribute("href","#");
          var textoBorrar=document.createTextNode("borrar");
          ancla.appendChild(textoBorrar);
-         ancla.addEventListener("click",borrar);
+         
         
         
          limpiar();        

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- px es muy absoluto y depende del monitor, no es fijo
+depende de la resolucion. si aumento es font size de chromeno se modifican como queremos
+USAR PORCENTAJE O REM ej 3rem, puedo usar px para cosas que no varian ejemploi margen
+
+-->
+    <div style="background-color: blueviolet;height: 3rem;"> <!--witdh 100 por defecto en div-->
+        <div style="background-color: yellowgreen;height: 1rem;margin: auto;width: 50%;"> <!--PADDING Y BORDER USAR BOX SIZING-->
+        </div>
+    </div>
+    <div style="background-color: blue;height: 5rem;">
+        <!--position absolute se mueve en relacion a uno, relative se mueve libremente, absolute
+        dentro de otro div, div dentro de otro adentro absolute fuera relative, si son 2 relative se superponen
+    y son libres
+    fixed anclado a windows, siempre esta visible-->
+    </div>
+
+    <!--FELIX: ALLIGN ITEM SE MUEVE ARRIBA ABAJO, JUSTIFY CONTENT DERECHA IOZQUIERA
+    PENSEMOS EL TODOS LOS DIVS COMO 1 ELEMENTOS DE FILA O COLUMNA, VAN EN CONTENEDOR
+    PADRE CON FLEX, SE TOCAN STRIBUTOS DEL PADRE, FLEXWRAP HACE QUE LOS DIVS DE ADENTRO  
+    NOSE ACHIQUEN SINO QUE LOS POSICIOONES UNO DEBAJO DE OTRO
+    FELIX GROW SE LE DA PESO A CADA HIJO PARA QUE SI HAY ESPACIO SE EXPANDA
+    EL PESACIO SE EXPANDE SEGUN NUMERO SI LE DOY 1 A 1 Y 3 A OTRO Y EL ULTIMO SIN NADA
+    SE DIVIDE EN 4 Y UNO TOMA 1/4 EL OTRO 3/4 (REPARTE ESPACIO SOBRANTE)-->
+</body>
+</html>

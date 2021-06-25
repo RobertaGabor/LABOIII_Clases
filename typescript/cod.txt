@@ -1,0 +1,3 @@
+tsc test.ts -w (convierte a js y cda vez q modificas sae modifrica)
+tsc --init  crea json
+tsc -w

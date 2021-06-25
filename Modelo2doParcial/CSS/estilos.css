@@ -1,0 +1,103 @@
+body {
+    background: salmon;    
+}
+input[type="button"]
+{
+    float:right;
+    margin-right: 20px;
+    border: none;
+    padding: 20px;
+    border-radius: 50%;
+}
+.mod
+{
+    background-color: gray
+}
+.DEL
+{
+    background-color: rgb(231, 105, 105);
+  
+}
+.error
+{
+    border: 2px solid rgb(179, 32, 32);
+}
+.ok
+{
+    border: 1px solid gray;
+}
+.ADD
+{
+    background-color: rgb(80, 199, 80);
+}
+.contenedor{
+    width: 1080px;
+    margin: auto;
+    background: greenyellow;
+    color: seagreen;
+    padding: 20px 15px 50px 50px;
+    border-radius: 10px;
+}
+table,td,tr,th
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 45px;
+
+    
+}
+label
+{
+    display: inline-block;
+    text-align: right;
+    width: 140px;
+}
+.contenedor .titulo{
+    font-size: 3.5ex;
+    font-weight: bold;
+    color: goldenrod;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#pestanas {
+    float: top;
+    font-size: 3ex;
+    font-weight: bold;
+}
+
+#pestanas ul{
+    margin-left: -40px;    
+}
+
+#pestanas li{
+    list-style-type: none;
+    float: left;
+    text-align: center;
+    margin: 0px 2px -2px -0px;
+    background:sandybrown;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 2px solid sandybrown;
+    border-bottom: peru;
+    padding: 0px 20px 0px 20px;
+}
+
+#pestanas a:link{
+    text-decoration: none;
+    color: skyblue;
+}
+
+#contenidopestanas{
+    clear: both;  
+    background: sandybrown;
+    padding: 20px 0px 20px 20px;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border: 2px solid sandybrown;
+    width: 1025px;
+}
+
